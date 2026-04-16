@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="calculatorstyle.css">
+</head>
+<body>
+  <div class="main-box" > 
+    <div class="container">
+      <div class="heading" >Calculator</div>
+      <div>
+      <button class="number" onclick="
+        calculation += '1';
+        console.log(calculation);
+        " >1</button>
+      <button class="number" onclick="
+        calculation += '2';
+        console.log(calculation);
+        ">2</button>
+      <button class="number" onclick="
+        calculation += '3';
+        console.log(calculation);
+        ">3</button>
+      <button class="special-character" onclick="
+        calculation += ' + ';
+        console.log(calculation);
+        ">+</button>
+      </div>
+    <div>
+      <button class="number" onclick="
+        calculation += '4';
+        console.log(calculation);
+        " >4</button>
+      <button class="number" onclick="
+        calculation += '5';
+        console.log(calculation);
+        ">5</button>
+      <button class="number" onclick="
+        calculation += '6';
+        console.log(calculation);
+        ">6</button>
+      <button class="special-character" onclick="
+        calculation += ' - ';
+        console.log(calculation);
+        ">-</button>
+    </div>
+
+    <div>
+      <button class="number" onclick="
+        calculation += '7';
+        console.log(calculation);
+        ">7</button>
+      <button class="number" onclick="
+        calculation += '8';
+        console.log(calculation);
+        ">8</button>
+      <button class="number" onclick="
+        calculation += '9';
+        console.log(calculation);
+        " >9</button>
+      <button class="special-character" onclick="
+        calculation += ' * ';
+        console.log(calculation);
+        ">*</button>
+    </div>
+    <div>
+      <button class="number" onclick="
+        calculation += '0';
+        console.log(calculation);
+        ">0</button>
+      <button class="number" onclick="
+        calculation += '.';
+        console.log(calculation);
+        ">.</button>
+      <button class="number" onclick="
+        calculation = eval(calculation);
+        console.log(calculation);
+        ">=</button>
+      <button class="special-character" onclick="
+        calculation += '/';
+        console.log(calculation);
+        ">/</button>
+    </div>
+
+    <div>
+      <button class="clear" onclick="
+        calculation = '';
+        console.log(`Cleared`);
+        ">Clear</button>
+    </div>
+  </div>
+  </div>
+
+ <!-- Script -->
+  <script>
+    calculation = '';
+  </script>
+  
+  
+</body>
+</html>
